@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">AI Solution logo</title>
+  <desc id="desc">A connected AI monogram mark for AI Solution.</desc>
+  <defs>
+    <linearGradient id="aiGradient" x1="14" x2="86" y1="18" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="0.52" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1f2a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="20" fill="#ffffff"/>
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="url(#aiGradient)"/>
+  <circle cx="28" cy="27" r="6" fill="#ffffff"/>
+  <circle cx="70" cy="25" r="5" fill="#ffffff"/>
+  <circle cx="75" cy="70" r="6" fill="#ffffff"/>
+  <circle cx="23" cy="68" r="5" fill="#ffffff"/>
+  <path d="M32 29h32M67 30l7 35M70 69H29M27 63l2-30" fill="none" stroke="#dbeafe" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 61l13-35h8l13 35h-9l-2.4-7H40.4l-2.5 7H30zm43 0V36h-8v25h8zM42.8 47h7.1l-3.5-10.6L42.8 47z" fill="#ffffff"/>
+</svg>

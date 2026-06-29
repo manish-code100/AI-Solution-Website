@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Solution enquiry form for customer project requests stored securely in the admin management system.">
+  <title>Enquiry Form | AI Solution</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/ai-solution-logo.svg">
+</head>
+<body class="content-page">
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="AI Solution home">
+      <span class="brand-mark">
+        <img class="brand-logo" src="assets/ai-solution-logo.svg" alt="" aria-hidden="true">
+      </span>
+      <span>
+        <strong>AI Solution</strong>
+        <small>PROJECT ENQUIRY</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation" data-nav data-button-nav data-active-page="contact"></nav>
+  </header>
+
+  <main class="page-main">
+    <section class="section section-white" id="contact" aria-labelledby="enquiry-title">
+      <div class="container contact-layout">
+        <div class="glass-card contact-intro">
+          <p class="eyebrow">Enquiry form</p>
+          <h1 id="enquiry-title">Tell us what you want AI to improve.</h1>
+          <p>This enquiry flow stores customer project details in the MySQL database so the admin team can review and manage each request securely.</p>
+          <ul class="contact-points" aria-label="Frontend enquiry flow">
+            <li>User submits project details</li>
+            <li>System stores the enquiry in MySQL</li>
+            <li>Admin reviews and updates the status</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="enquiryForm" action="submit-enquiry.php" method="post" novalidate>
+          <p class="form-status" aria-live="polite"></p>
+          <label class="honeypot" aria-hidden="true">
+            <span>Website</span>
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </label>
+          <div class="form-grid">
+            <label>
+              <span>Name *</span>
+              <input type="text" name="name" autocomplete="name" required>
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Email *</span>
+              <input type="email" name="email" autocomplete="email" required>
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel">
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Company</span>
+              <input type="text" name="company" autocomplete="organization">
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Country</span>
+              <input type="text" name="country" autocomplete="country-name">
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Job Title</span>
+              <input type="text" name="job_title" autocomplete="organization-title">
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>AI Service</span>
+              <select name="service">
+                <option value="">Select a service</option>
+                <option>AI Chatbots</option>
+                <option>Machine Learning Solutions</option>
+                <option>Predictive Analytics</option>
+                <option>AI Automation</option>
+                <option>Data Intelligence</option>
+                <option>AI Consulting</option>
+                <option>Custom AI Development</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+            <label>
+              <span>Timeline</span>
+              <select name="timeline">
+                <option value="">Select timeline</option>
+                <option>Immediately</option>
+                <option>Within 1 month</option>
+                <option>Within 3 months</option>
+                <option>Planning stage</option>
+              </select>
+              <small class="field-error"></small>
+            </label>
+            <label class="full-span">
+              <span>Message *</span>
+              <textarea name="message" rows="5" required></textarea>
+              <small class="field-error"></small>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+            <a class="btn btn-secondary" href="contact.html">Contact Details</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AI Solution. All Rights Reserved.</p>
+      <p class="footer-credit">Designed and developed by Manish Sah.</p>
+    </div>
+  </footer>
+
+  <script src="navigation-buttons.js?v=20260606"></script>
+  <script src="script.js?v=20260606"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+tmp/
+
+# Local/editor files
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Dependency folders if added later
+node_modules/
+vendor/
+
+# Local generated report-build files
+*.pyc
+__pycache__/
+
+# Assignment/report source files that are not needed to run the website
+*.docx
+*.xlsx
+*Draw.io*.drawio
+open-updated-wireframe-url.txt
+capture_assignment_screenshots.js

@@ -1,0 +1,21 @@
+AI Solution - Server-side Validation and Database Save Algorithm
+
+Input:
+POST fields: name, email, phone, company, country, service, timeline and message.
+
+Output:
+Success redirect when the enquiry is saved, or an error redirect when validation/database handling fails.
+
+Algorithm:
+1. Start the enquiry submission process after the user sends the contact/enquiry form.
+2. Read all POST values and trim unnecessary spaces from each field.
+3. Check honeypot/hidden anti-spam field. If it contains text, stop the request safely.
+4. Validate required fields: name, valid email address and message must be present.
+5. Validate optional fields such as phone, company, country, service and timeline within allowed length limits.
+6. If validation fails, redirect the user back to the form with an error status.
+7. Open the MySQL connection through the PDO database helper.
+8. Prepare an INSERT statement for the enquiries table using named placeholders.
+9. Bind clean values to the statement. Empty optional values are stored as NULL.
+10. Execute the prepared statement so the enquiry is saved without SQL injection risk.
+11. Redirect the user back to the website with a success status and make the record visible in the admin dashboard.
+12. End.
